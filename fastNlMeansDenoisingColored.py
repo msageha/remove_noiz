@@ -42,7 +42,7 @@ if __name__ == '__main__':
     parser = parser = argparse.ArgumentParser(description='This script is remove noiz filter from images')
     parser.add_argument('-i', '--input', type=str, default='')
     parser.add_argument('-o', '--output', type=str, default='')
-    parser.add_argument('-m', '--multi', type=bool, default=False, action='store_true')
+    parser.add_argument('-m', '--multi', default=False, action='store_true')
 
     args = parser.parse_args()
     if args.multi:
